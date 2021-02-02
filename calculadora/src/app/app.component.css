@@ -1,0 +1,35 @@
+h1{
+    color: red;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.grupoFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.botones{
+    margin-left: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-left: 15px;
+}
+
+p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+label{
+    margin-right: 10px;
+}
