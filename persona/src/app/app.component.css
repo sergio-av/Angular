@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+hr{
+    width: 50%;
+}
+
+.inputs{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#nombre{
+    width: 500px;
+    height: auto;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#apellido{
+    width: 500px;
+    height: auto;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#boton{
+    margin-bottom: 30px ;
+    
+}
+
+.listaNombres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.listaNombres p{
+    font-size: large;
+}

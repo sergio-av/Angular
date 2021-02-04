@@ -1,0 +1,17 @@
+<h1>
+  {{title}}
+</h1>
+
+<hr>
+<div class="inputs">
+  <input id="nombre" class="form-control form-control-lg" type="text" placeholder="Nombre" [(ngModel)]="nombre">
+  <input id="apellido" class="form-control form-control-lg" type="text" placeholder="Apellido" [(ngModel)]="apellido">
+  <button  id="boton" type="button" class="btn btn-primary" (click)="meterNombre()" >Agregar</button>
+</div>
+<hr>
+
+<div class="listaNombres">
+  <ol *ngFor='let nombre of listaNombres; let numero =index' >
+    <p>{{numero+1}}.  {{ nombre }}</p>
+  </ol>
+</div>
