@@ -24,7 +24,7 @@ export class AppComponent {
   }
 
   selecMario(){
-
+    this.opciones = 3;
   }
 
   ocultar(){
