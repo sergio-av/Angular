@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Candidatos';
+  title = 'Lista de Candidatos';
 
   Sergio = new Candidato('Sergio',23,'82 Kg', 'Raptalo', '../assets/sergio.png')
   Espe = new Candidato('Espe',23,'60 Kg','Junco','../assets/esperanza.png')
