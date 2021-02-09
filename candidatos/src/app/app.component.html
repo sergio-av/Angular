@@ -1,0 +1,73 @@
+<h1>
+  {{title}}
+</h1>
+
+<div class="contenido" [ngSwitch]="opciones" >
+  <p id="instrucciones">Seleccione un Candidato haciendo click:
+    <br> - 1 click para mostrar
+    <br> - 2 clicks para ocultar
+  </p>
+
+  <div class="secciones">
+    <div class="candidatos">
+      <h2>Candidatos</h2>
+      <div class="sergio">
+        <h6 (click)="selecSergio()" (dblclick)="ocultar()" >Sergio</h6>
+      </div>
+    
+      <div class="espe">
+        <h6 (click)="selecEspe()" (dblclick)="ocultar()">Esperanza</h6>
+      </div>
+    
+      <div class="mario">
+        <h6 (click)="selecMario()" (dblclick)="ocultar()">Mario</h6>
+      </div>
+    </div>
+  
+    <div class="datos">
+      <h2>Datos</h2>
+      <div *ngSwitchCase="1" id="cand1">
+        <p>Nombre: {{candidatos[0].nombre}} </p>
+        <p>Edad: {{candidatos[0].edad}} </p>
+        <p>Peso: {{candidatos[0].pesos}} </p>
+        <p>Apodo: {{candidatos[0].alias}} </p>
+        
+      </div>
+  
+      <div *ngSwitchCase="2" id="cand2">
+        <p>Nombre: {{candidatos[1].nombre}} </p>
+        <p>Edad: {{candidatos[1].edad}} </p>
+        <p>Peso: {{candidatos[1].pesos}} </p>
+        <p>Apodo: {{candidatos[1].alias}} </p>
+        
+      </div>
+  
+      <div *ngSwitchCase="3" id="cand3">
+        <p>Nombre: {{candidatos[2].nombre}} </p>
+        <p>Edad: {{candidatos[2].edad}} </p>
+        <p>Peso: {{candidatos[2].pesos}} </p>
+        <p>Apodo: {{candidatos[2].alias}} </p>
+        
+      </div>
+    </div>
+  
+    <div class="fotos">
+      <h2>Foto</h2>
+      <div class="imagenes">
+        <span  *ngSwitchCase="1"><p><img src="{{candidatos[0].imagen}}" alt="imagen"></p></span>
+        <span  *ngSwitchCase="2"><p><img src="{{candidatos[1].imagen}}" alt="imagen"></p></span>
+        <span  *ngSwitchCase="3"><p><img src="{{candidatos[2].imagen}}" alt="imagen"></p></span>  
+      </div>
+    </div>
+
+  </div>
+  
+  
+  
+
+</div>
+
+
+
+
+
