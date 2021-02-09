@@ -1,0 +1,24 @@
+.grupoFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.botones{
+    margin-left: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-left: 15px;
+}
+
+label{
+    margin-right: 10px;
+}

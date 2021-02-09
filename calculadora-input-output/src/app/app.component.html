@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<app-formulario
+  (resultadoSuma)="onResultado($event)"
+  (resultadoResta)="onResultado($event)"
+  (resultadoMultiplicacion)="onResultado($event)"
+  (resultadoDivision)="onResultado($event)">
+</app-formulario>
+<app-resultado
+[resultado]="resultadoPadre">
+</app-resultado>
+
